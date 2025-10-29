@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS ends here -->
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div>
+            <div>My Portfolio</div>
+            <nav>
+                <a href="#about" data-active="true">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <a id="about" class="anchor"></a>
+    <section id="about-section">
+        <div>
+            <h2>About Me</h2>
+            <div>
+                <!-- Avatar placeholder container -->
+                <div>
+                    <!-- NEW: Replaced the placeholder div with an <img> tag -->
+                    <img src="Anu.jpg" alt="Profile Picture">
+                </div>
+                <p>Hello! My name is Anubhab Bhattacharjee. I am learning web development and this is my first portfolio website.</p>
+            </div>
+        </div>
+    </section>
+    <div></div> <!-- Section Divider -->
+
+    <!-- My Skills Section -->
+    <a id="skills" class="anchor"></a>
+    <section id="skills-section">
+        <div>
+            <h2>My Skills</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Learning</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <div></div> <!-- Section Divider -->
+
+    <!-- My Projects Section -->
+    <a id="projects" class="anchor"></a>
+    <section id="projects-section">
+        <div>
+            <h2>My Projects</h2>
+            <div>
+                <div>
+                    <h3>Project 1</h3>
+                    <p>A simple HTML & CSS webpage.</p>
+                </div>
+                <div>
+                    <h3>Project 2</h3>
+                    <p>Another mini project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div></div> <!-- Section Divider -->
+
+    <!-- Contact Me Section -->
+    <a id="contact" class="anchor"></a>
+    <section id="contact-section">
+        <div>
+            <h2>Contact Me</h2>
+            <div>
+                <form onsubmit="event.preventDefault(); console.log('Message Sent (Simulated)!');">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" placeholder="Write your message" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div></div> <!-- Section Divider -->
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a href="#about">I Back to Top</a>
+        </div>
+    </footer>
+</body>
+</html>
